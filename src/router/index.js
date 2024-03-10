@@ -10,8 +10,8 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/code',
-      name: 'code',
+      path: '/projet',
+      name: 'projet',
       component: () => import('../views/CodeView.vue'),
     },
   ]

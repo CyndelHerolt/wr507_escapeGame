@@ -9,7 +9,7 @@ import HomeView from "@/views/HomeView.vue";
       <RouterLink to="/" active-class="active-link">
         Accueil
       </RouterLink>
-      <RouterLink to="/code" active-class="active-link">
+      <RouterLink to="/projet" active-class="active-link">
         Projet
       </RouterLink>
     </nav>

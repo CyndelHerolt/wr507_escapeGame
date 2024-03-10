@@ -15,7 +15,8 @@ import {RouterLink} from "vue-router";
       <article>
         <h3>Synopsis</h3>
         <p>
-          Piégé dans la douche par la terrible Sylvie, il vous faudra redoubler d'ingéniosité pour retrouver la clé qui vous permettra de vous échapper.
+          Piégé dans la douche par la terrible Sylvie, il vous faudra redoubler d'ingéniosité pour retrouver la clé qui
+          vous permettra de vous échapper.
           Lugubre et particulièrement humide, la salle de bain est un lieu de tous les dangers.
         </p>
         <p>
@@ -376,7 +377,7 @@ public class ChangeTextOnButtonClick : MonoBehaviour
         </pre>
       </article>
     </section>
-    
+
     <section>
       <h3>
         Hiérarchie du projet
@@ -393,6 +394,47 @@ public class ChangeTextOnButtonClick : MonoBehaviour
           Scène
         </h4>
         <img src="/scene_hierarchie.png" alt="">
+      </article>
+    </section>
+
+    <section>
+      <h3>
+        Projet final
+      </h3>
+
+      <article style="display: flex; justify-content: space-between">
+        <div style="width: 50%">
+          <h4>
+            Vidéo de démonstration
+          </h4>
+          <iframe width="100%" height="630" src="/test_jeu.mp4" allowfullscreen></iframe>
+        </div>
+        <div  style="width: 45%">
+          <h4>Commentaires sur le déroulement du jeu</h4>
+          <div class="commentaires">
+            <ol>
+              <li>Ramasser le pommeau de douche (étape indiquée dans la boite de dialogue fixée sur le poignet gauche) permet de comprendre que le circuit d'eau est coupé et qu'il va falloir réparer ça si on veut passer à l'étape suivante. <span class="bold">L'effet de particule du pommeau est simplement désactivé tant que l'étape de réparation n'est pas validée.</span></li>
+              <li>Réparer le tuyau déclenche l'apparition du 1er morceau de clé. On comprend alors qu'il va falloir en récupérer plusieurs pour terminer la partie. <span class="bold">Le clic sur le bouton réparer stop l'effet de particule du tuyau, masque celui affiché pour le remplacer par un autre objet qui lui est dans la bonne position.</span></li>
+              <li>Maintenant, la boite de dialogue nous oriente de nouveau vers le pommmeau et met en avant le tube. Element principal de la 2eme étape. On remarque alors que l'eau qui sort du pommeau permet de remplir ce tube. Une fois plein, un nouveau morceau de clé apparaît. <span class="bold">Ici, il y a un plane invisible sur le dessus du tube qui, lorsqu'il entre en contact avec des particules, déclenche une modification de taille du cylindre contenu dans le tube.</span></li>
+              <li>Maintenant, toujours à l'aide du pommeau, il faut nettoyer les tâches sur le mur de la douche pour laisser apparaître des chiffres. <span class="bold">Il y a sur le mur un plane qui contient pour Material 4 png (3 tâches et 1 suite de chiffres). Le contact avec les particules du pommeau entraine une baisse d'opacité pour les 3 png de tâches (chacun leur tour) et en parallèle, le png de la suite de chiffre gagne en opacité.</span></li>
+              <li>Il suffit ensuite de saisir ce code sur le coffre qui trone au centre de la pièce depuis le début pour récupérer le dernier morceau de clé et s'enfuir.</li>
+            </ol>
+            <br>
+              <em>Pour info, les étapes des taches sur le mur et du tube peuvent s'effectuer dans n'importe quel ordre.</em>
+
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h4>
+          Téléchargement
+        </h4>
+        <a href="/projet/buildEscapeShower.apk" download="buildEscapeShower.apk">
+          <button>
+            Télécharger le .apk
+          </button>
+        </a>
       </article>
     </section>
   </main>
