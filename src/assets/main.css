@@ -1,0 +1,108 @@
+@import './base.css';
+@font-face {
+  font-family: 'Matcha';
+  src: url('/src/assets/fonts/matcha.ttf');
+  /*format('truetype')*/
+}
+
+#app {
+  /*max-width: 1280px;*/
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  font-weight: normal;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 150px 100px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vt-c-text-dark-1);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 0 15px;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  .logo {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-family: Matcha, serif;
+    font-size: 5.5vw;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: Matcha, serif;
+    font-size: 3.5vw;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: Matcha, serif;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  p, em {
+    margin-bottom: 15px;
+  }
+
+  article {
+    margin-bottom: 50px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--vt-c-indigo);
+    color: var(--vt-c-white);
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+    button:hover {
+        background-color: var(--vt-c-black-soft);
+    }
+
+  .home_head {
+    margin: 75px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
